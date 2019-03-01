@@ -1,0 +1,37 @@
+{
+  "name": "object-keys-filter",
+  "version": "1.0.0",
+  "description": "Filter an object with a regular expression.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project tsconfig.json --format verbose",
+    "test": "mocha ./build/test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgraydev/object-keys-filter.git"
+  },
+  "keywords": [
+    "object",
+    "keys",
+    "filter",
+    "regexp",
+    "regular",
+    "expression"
+  ],
+  "author": "Mark Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markgraydev/object-keys-filter/issues"
+  },
+  "homepage": "https://github.com/markgraydev/object-keys-filter#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
+  }
+}

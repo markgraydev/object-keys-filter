@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declarationDir": "./declaration",
+    "outDir": "./build",
+    "declaration": true,
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "module": "commonjs",
+    "target": "es5"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
