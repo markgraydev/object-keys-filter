@@ -7,7 +7,7 @@ export function filterObject(object: StringAnyMap, regexp: RegExp) {
   const result: StringAnyMap = {};
 
   return Object.keys(object)
-    .filter((key) => object.hasOwnProperty(key) && regexp.test(key))
+    .filter((key) => regexp.test(key))
     .reduce((accumulator, key) => {
       accumulator[key] = object[key];
       return accumulator;
