@@ -8,7 +8,7 @@ $ npm install --save object-keys-filter
 ## Usage.
 
 ```ts
-import { filterObject } from "object-keys-filter";
+import { filterObjectByRegExp } from "object-keys-filter";
 
 const source = {
   property: true,
@@ -16,5 +16,5 @@ const source = {
   key: "value"
 };
 
-const filtered = filterObject(source, /property/i);
+const filtered = filterObjectByRegExp(source, /property/i);
 ```

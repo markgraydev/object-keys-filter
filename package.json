@@ -1,6 +1,6 @@
 {
   "name": "object-keys-filter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Filter an object with a regular expression.",
   "main": "build/index.js",
   "scripts": {
@@ -27,11 +27,11 @@
   },
   "homepage": "https://github.com/markgraydev/object-keys-filter#readme",
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "chai": "^4.2.0",
-    "mocha": "^6.0.2",
-    "tslint": "^5.13.1",
-    "typescript": "^3.3.3333"
+    "@types/chai": "~4.2.2",
+    "@types/mocha": "~5.2.7",
+    "chai": "~4.2.0",
+    "mocha": "~6.2.0",
+    "tslint": "~5.20.0",
+    "typescript": "~3.6.3"
   }
 }

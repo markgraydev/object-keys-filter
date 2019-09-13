@@ -8,7 +8,7 @@
     "noImplicitReturns": true,
     "strict": true,
     "module": "commonjs",
-    "target": "es5"
+    "target": "es6"
   },
   "include": [
     "./src/**/*"

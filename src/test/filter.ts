@@ -1,6 +1,6 @@
 import "mocha";
 import { expect } from "chai";
-import { filterObject } from "../index";
+import { filterObjectByRegExp } from "../index";
 
 
 describe("filterObject", () => {
@@ -10,8 +10,8 @@ describe("filterObject", () => {
     key: "value"
   };
 
-  it("Case sensitive filter: /property/i", () => {
-    const filtered = filterObject(source, /property/i);
+  it("case sensitive filter: /property/i", () => {
+    const filtered = filterObjectByRegExp(source, /property/i);
 
     expect(filtered).to.eql({
       property: true,
@@ -19,8 +19,8 @@ describe("filterObject", () => {
     });
   });
 
-  it("Group filter: property|key", () => {
-    const filtered = filterObject(source, /property|key/);
+  it("group filter: property|key", () => {
+    const filtered = filterObjectByRegExp(source, /property|key/);
 
     expect(filtered).to.eql({
       property: true,
@@ -28,8 +28,8 @@ describe("filterObject", () => {
     });
   });
 
-  it("Copy object: .*", () => {
-    const filtered = filterObject(source, /.*/);
+  it("copy object: .*", () => {
+    const filtered = filterObjectByRegExp(source, /.*/);
 
     expect(filtered).to.eql(source);
   });
